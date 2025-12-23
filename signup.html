@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - IT Help Desk</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label>Email Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder=" " required>
+                    <label>Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder=" " required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="redirect">Already have an account? <a href="login.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

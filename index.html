@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Help Desk</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Unique SVG icon as logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1v22M5 12h14"/>
+                    <circle cx="12" cy="12" r="10"/>
+                </svg>
+                <span>IT Help Desk</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#submit-ticket">Submit Ticket</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" class="nav-btn login-btn">Login</a></li>
+                <li><a href="signup.html" class="nav-btn signup-btn">Sign Up</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <script>
+    function toggleMenu(){
+        document.querySelector('.nav-links').classList.toggle('active');
+        document.querySelector('.hamburger').classList.toggle('toggle');
+    }
+    </script>
+    
+
+    <section id="home">
+        <div class="home-container">
+    
+            <!-- Left Hero Text -->
+            <div class="home-left">
+                <div class="home-text">
+                    <h1>Welcome to <span>IT Help Desk</span></h1>
+                    <p>Your IT problems solved efficiently and professionally online. 24/7 support, secure, and reliable.</p>
+    
+                    <div class="home-buttons">
+                        <a href="#submit-ticket" class="btn primary">Submit Ticket</a>
+                        <a href="#services" class="btn secondary">Explore Services</a>
+                    </div>
+    
+                    <div class="home-stats">
+                        <div>
+                            <h3>10+</h3>
+                            <span>Experts</span>
+                        </div>
+                        <div>
+                            <h3>500+</h3>
+                            <span>Tickets Solved</span>
+                        </div>
+                        <div>
+                            <h3>99%</h3>
+                            <span>Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Image -->
+            <div class="home-right">
+                <img src="./images/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" class="hero-img">
+            </div>
+    
+        </div>
+    </section>
+   
+<section id="submit-ticket">
+    <div class="ticket-container">
+
+        <!-- Left Info -->
+        <div class="ticket-info">
+            <h2>Submit Your IT Issue</h2>
+            <p>
+                Facing technical problems? Don’t worry.  
+                Our IT experts are ready to help you with fast and reliable solutions.
+                Submit your issue and our support team will contact you shortly.
+            </p>
+
+            <ul class="ticket-points">
+                <li>✔ 24/7 Online Support</li>
+                <li>✔ Fast Issue Resolution</li>
+                <li>✔ Professional IT Experts</li>
+                <li>✔ Secure & Confidential</li>
+            </ul>
+
+            <div class="ticket-note">
+                <h4>How it works?</h4>
+                <p>
+                    Fill the form → Issue assigned → Expert resolves → You get notified
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="ticket-form">
+            <form id="ticketForm">
+                <div class="input-group">
+                    <input type="text" id="ticketName" required>
+                    <label>Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="ticketEmail" required>
+                    <label>Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <select id="ticketType" required>
+                        <option value=""></option>
+                        <option>Software</option>
+                        <option>Hardware</option>
+                        <option>Network</option>
+                        <option>Account</option>
+                    </select>
+                    <label>Problem Type</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="ticketDesc" required></textarea>
+                    <label>Describe Your Issue</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Ticket
+                </button>
+
+                <p class="form-footer">
+                    Your data is safe & encrypted 🔒
+                </p>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section id="services">
+    <div class="services-container">
+
+        <!-- Heading -->
+        <div class="services-heading">
+            <h2>Our <span>IT Services</span></h2>
+            <p>
+                We provide a wide range of professional IT services designed to
+                keep your systems secure, efficient, and always running.
+            </p>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="services-cards">
+
+            <div class="service-card">
+                <h3>Software Support</h3>
+                <p>
+                    Installation, updates, bug fixing, antivirus setup,
+                    and system optimization for smooth performance.
+                </p>
+                <ul>
+                    <li>✔ OS & App Installation</li>
+                    <li>✔ Virus Removal</li>
+                    <li>✔ Performance Boost</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Hardware Support</h3>
+                <p>
+                    Troubleshooting and maintenance of computers, laptops,
+                    printers, and other hardware devices.
+                </p>
+                <ul>
+                    <li>✔ Device Repair</li>
+                    <li>✔ Hardware Upgrade</li>
+                    <li>✔ Driver Issues</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Network Support</h3>
+                <p>
+                    Internet connectivity, Wi-Fi issues, router configuration,
+                    and secure network solutions.
+                </p>
+                <ul>
+                    <li>✔ Wi-Fi Setup</li>
+                    <li>✔ Network Security</li>
+                    <li>✔ Speed Optimization</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Account Support</h3>
+                <p>
+                    Password recovery, account security, access management,
+                    and user authentication solutions.
+                </p>
+                <ul>
+                    <li>✔ Password Reset</li>
+                    <li>✔ Account Recovery</li>
+                    <li>✔ Data Protection</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-container">
+
+        <!-- Left Content -->
+        <div class="about-text">
+            <h2>About <span>IT Help Desk</span></h2>
+            <p>
+                IT Help Desk is a modern online support platform designed to provide
+                fast, secure, and reliable IT solutions. We help individuals and
+                organizations resolve technical issues efficiently without delays.
+            </p>
+
+            <p>
+                Our expert team specializes in software troubleshooting, hardware
+                maintenance, network security, and account management — all under
+                one professional support system.
+            </p>
+
+            <div class="about-highlights">
+                <div>
+                    <h3>10+</h3>
+                    <span>IT Experts</span>
+                </div>
+                <div>
+                    <h3>500+</h3>
+                    <span>Tickets Solved</span>
+                </div>
+                <div>
+                    <h3>99%</h3>
+                    <span>Success Rate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Cards -->
+        <div class="about-cards">
+
+            <div class="about-card">
+                <h4>Our Mission</h4>
+                <p>
+                    To provide fast, reliable, and affordable IT solutions
+                    that empower users and businesses to stay productive.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h4>Our Vision</h4>
+                <p>
+                    To become a trusted global IT support platform known for
+                    quality service, innovation, and customer satisfaction.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h4>Our Values</h4>
+                <p>
+                    Security, transparency, professionalism, and continuous
+                    improvement are the core values that guide our work.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="contact-container">
+
+        <!-- Left Info -->
+        <div class="contact-info">
+            <h2>Get in <span>Touch</span></h2>
+            <p>
+                Need help or have questions?  
+                Our IT Help Desk team is always ready to assist you.
+                Reach out to us anytime and we’ll respond quickly.
+            </p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <span>support@ithelpdesk.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <h4>Phone</h4>
+                    <span>+92 300 1234567</span>
+                </div>
+
+                <div class="contact-item">
+                    <h4>Location</h4>
+                    <span>Karachi, Pakistan</span>
+                </div>
+            </div>
+
+            <div class="contact-hours">
+                <h4>Support Hours</h4>
+                <p>24/7 Online IT Support Available</p>
+            </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact-form">
+            <form>
+
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>Your Message</label>
+                </div>
+
+                <button type="submit" class="contact-btn">
+                    Send Message
+                </button>
+
+                <p class="contact-footer">
+                    We usually reply within 24 hours ⏱️
+                </p>
+
+            </form>
+
+    
+</section>
+<footer>
+    <p>&copy; 2025 IT Help Desk. All rights reserved.</p>
+    <p>Email: support@ithelpdesk.com | Phone: +92 300 1234567 | Karachi, Pakistan</p>
+    <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/facebook-new.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/twitter.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/linkedin.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png"/></a>
+    </div>
+</footer>
+
+
+<script src="dashboard.js"></script>
+</body>
+</html>
